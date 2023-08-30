@@ -21,7 +21,7 @@ def random_batch():
 class Word2Vec(nn.Module):
     def __init__(self):
         super(Word2Vec, self).__init__()
-        # W and WT is not Traspose relationship
+        # W and WT is not Transpose relationship
         self.W = nn.Linear(voc_size, embedding_size, bias=False) # voc_size > embedding_size Weight
         self.WT = nn.Linear(embedding_size, voc_size, bias=False) # embedding_size > voc_size Weight
 
